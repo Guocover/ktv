@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+  <html>
+      <head>
+          <title>轻应用开发JavaScript代码示例</title>
+          <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+          <meta content="width=device-width,initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no" name="viewport" />
+          <style type="text/css">
+          .submit-btn {
+            display: inline-block;
+            padding: 5px 10px;
+            background: #eef80d;
+          }
+          .submit-btn:hover {
+            background: #000;
+            color: #fff;
+          }
+          </style>
+      </head>
+      <body>
+        <form method="post" action="/doubanlogin">
+          <input type="text" placeholder="name" name="alias">
+          <input type="password" placeholder="password" name="form_password">
+          <input type="text" placeholder="captcha" name="captcha_solution">
+          <img src="/douban">
+        </form>
+        <a class="submit-btn">登录</a>
+        <script type="text/javascript" src="jq.js"></script>
+        <script type="text/javascript">
+        $('.submit-btn').on('click', function () {
+          var input = $("<input>").attr("type", "hidden").attr("name", "source").val("radio");
+          $('form').append($(input));
+          var input = $("<input>").attr("type", "hidden").attr("name", "task").val("sync_channel_list");
+          $('form').append($(input));
+          $('form').submit();
+        })
+        </script>
+      </body>
+  </html>
