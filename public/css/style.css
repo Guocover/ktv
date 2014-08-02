@@ -15,9 +15,37 @@
 	-moz-box-sizing:border-box;
 
 }
+/*图片对比度改变*/
+.desaturate img{ filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
+}
+
 body{
 	background-color: #E6E6E6;
+	min-height: 500px;
 }
+
+/*common*/
+.b-btn{
+	width: 100%;
+	height: 40px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+	line-height: 35px;
+	background-color: #3A80A8;
+	border: 0;
+	box-shadow: 2px 1px 2px #555;
+	border-radius: 10px;
+}
+.b-btn:active{
+	background-color: #196a96;	
+}
+
 
 /*index.html 首页 --start*/
 img{
@@ -27,7 +55,7 @@ img{
 }
 
 #content{
-	width: 98%;
+	width: 100%;
 	margin: 0 auto;
 	padding-top: 44px;
 	height: 100%;
@@ -191,3 +219,98 @@ img{
 	background-size: cover;
 }
 /*index.html 首页 --end!!*/
+
+/*songList.html 首页 --start!!*/
+.recentSongWrapper{
+	width: 100%;
+	overflow: hidden;
+	height: 140px;
+	min-height: 140px;
+	padding-top:50px;
+	position: relative;
+	background:url("../img/songs/sw_bg.jpg") no-repeat;
+	background-size: cover;
+}
+.centerSong{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 50%;
+	margin-left: -50px;
+	z-index: 99;
+	border: 2px solid #56F538;
+	border-radius: 12px;
+	background: rgba(122, 115, 115, 0.5);
+	 -moz-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+
+}
+.asideSong{
+	width: 70px;
+	height: 70px;
+	position: absolute;
+	left: 50%;
+	top:90px;
+	 -moz-transition: all 0.5s ease-in;
+    -webkit-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+.aside-left{
+	margin-left: -140px;
+}
+.aside-right{
+	margin-left: 80px;
+}
+.aside-behind{
+	margin-left: -35px;
+}
+
+
+/*songList.html 首页 --end!!*/
+
+
+/*login.html 登录 --start*/
+.loginWrapper{
+	width: 95%;
+	margin: 20px auto;
+	overflow: hidden;
+}
+.loginForm{
+	width: 95%;
+	margin: 0 auto;
+	padding: 20px 0;
+	overflow: hidden;
+}
+.login_lineBox{
+	width: 100%;
+	line-height: 38px;
+	height: 38px;
+	margin-top: 20px;
+	position: relative;
+}
+.login_lineBox label{
+	display: inline-block;
+	width:80px;
+	line-height: 38px;
+	text-align: center;
+	font-size: 16px;
+	margin: 5px 0;
+}
+.login_lineBox .input{
+	height: 38px;
+	width: 100%;
+	padding-left: 38px;
+}
+
+.inputIcon{
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	left: 4px;
+	top: 4px;
+}
+
+/*login.html 登录 --end*/
