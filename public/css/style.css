@@ -1,0 +1,193 @@
+
+.clearfix:after { 
+	visibility: hidden; 
+	display: block; 
+	font-size: 0; 
+	content: " "; 
+	clear: both; 
+	height: 0; 
+	zoom:1;
+}
+
+.borderBox{
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+
+}
+body{
+	background-color: #E6E6E6;
+}
+
+/*index.html 首页 --start*/
+img{
+	display: inline-block;
+	width: 100%;
+	height:100%;
+}
+
+#content{
+	width: 98%;
+	margin: 0 auto;
+	padding-top: 44px;
+	height: 100%;
+}
+
+
+#header,#footer{
+	height:44px;
+	width: 100%; 
+	background:#685F85;
+	position: relative;
+	overflow: hidden;
+}
+
+#header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	
+}
+#footer{
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+
+.s-btn{
+	width: 38px;
+	height: 38px;
+	padding: 2px;
+	background: #32332E;
+	display: inline-block;
+	vertical-align: middle;
+	overflow: hidden;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	border-radius: 5px;
+	-webkit-border-radius:5px;
+	box-shadow: 1px 1px 1px #2C1E1E;;
+}
+.sq-btn{
+	border-radius: 50%;
+	width: 42px;
+	height: 42px;
+	background-color:#a9b7b7;
+	margin-top: 1px;
+}
+.s-btn .icon{
+	width: 100%;
+	height: 100%;
+}
+.header_title{
+	width: 100%;
+	line-height: 44px;
+	text-align: center;
+	color: #f7f7f7;
+	font-size: 19px;
+	font-weight: bold;	
+	font-family: "微软雅黑";
+}
+
+.default_left{
+	position: absolute;
+	left: 8px;
+	top: 3px;
+}
+.default_right{
+	position: absolute;
+	right: 8px;
+	top: 3px;
+} 
+
+.default_center{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	
+}
+
+/*playerWrapper*/
+.playerWrapper{
+	width: 95%;
+	margin:50px auto;
+	overflow: hidden;
+}
+.player{
+	height: 70px;
+	width: 100%;
+}
+.player .info{
+	height: 100%;
+	color:#333;
+	font-family: "楷体";
+	float: left;
+	margin-left: 10px;
+	width: 200px;
+	
+}
+.playerName{
+	font-size: 18px;
+	font-weight: bold;
+}
+.player .info .account{
+	height: 25px;
+	overflow: hidden;
+	line-height: 25px;
+	margin-top: 5px;
+}
+.player .info .accountName,.info .updateDate{
+	vertical-align: bottom;
+	display: inline-block; 
+    font-size: 15px;
+    font-family: "微软雅黑";
+    width:110px; 
+    white-space: nowrap;                   /* IE6 needs any width */
+    overflow: hidden;              /* "overflow" value must be different from "visible" */ 
+    -o-text-overflow: ellipsis;    /* Opera 9-10 */
+    text-overflow:    ellipsis;    /* IE, WebKit (Safari, Chrome), Firefox 7, Opera 11 */
+} 
+.info .updateDate{
+	font-size: 12px;
+	width: 90px;
+}
+.player a{	
+	width: 100%;
+	height: 100%;
+	border:1px solid #c7c7c7;
+	overflow: hidden;
+	display: block;
+	margin-top: 5px;
+	padding: 5px;
+	border-radius: 10px;
+	background-color: #F3F3F3;
+	box-shadow: 1px 1px 1px #D1D1D1;
+	-webkit-box-shadow:1px 1px 1px #D1D1D1;
+}
+.player a img{
+	float: left;
+	width: 60px;
+	height: 60px;
+}
+
+
+
+
+
+#loginBtn{
+	background: url("../img/loginSuccess.png") no-repeat;
+	background-size: cover;
+}
+#returnBtn{
+	background: url("../img/return.png") no-repeat;
+	background-size: cover;
+}
+#moreBtn{
+	background: url("../img/more.png") no-repeat;
+	background-size: cover;
+}
+#recordBtn{
+	background: url("../img/record.png") no-repeat;
+	background-size: cover;
+}
+/*index.html 首页 --end!!*/
