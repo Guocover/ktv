@@ -1,38 +1,84 @@
 <!DOCTYPE html>
-  <html>
-      <head>
-          <title>轻应用开发JavaScript代码示例</title>
-          <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-          <meta content="width=device-width,initial-scale=1, maximum-scale=3, minimum-scale=1, user-scalable=no" name="viewport" />
-          <style type="text/css">
-          .submit-btn {
-            display: inline-block;
-            padding: 5px 10px;
-            background: #eef80d;
-          }
-          .submit-btn:hover {
-            background: #000;
-            color: #fff;
-          }
-          </style>
-      </head>
-      <body>
-        <form method="post" action="/doubanlogin">
-          <input type="text" placeholder="name" name="alias">
-          <input type="password" placeholder="password" name="form_password">
-          <input type="text" placeholder="captcha" name="captcha_solution">
-          <img src="/douban">
-        </form>
-        <a class="submit-btn">登录</a>
-        <script type="text/javascript" src="jq.js"></script>
-        <script type="text/javascript">
-        $('.submit-btn').on('click', function () {
-          var input = $("<input>").attr("type", "hidden").attr("name", "source").val("radio");
-          $('form').append($(input));
-          var input = $("<input>").attr("type", "hidden").attr("name", "task").val("sync_channel_list");
-          $('form').append($(input));
-          $('form').submit();
-        })
-        </script>
-      </body>
-  </html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="format-detection" content="telephone=no,email=no"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0"/>
+	<title>首页</title>
+	<link rel="stylesheet" href="./css/reset.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<header id="header">
+		<div class="header_title">
+			Easy点歌
+		</div> 
+		<div class="s-btn default_right ">
+			<div id="loginBtn" class="icon">
+			</div>
+		</div> -->
+	  
+	</header>
+	<div id="content">
+		<div class="playerWrapper clearfix">
+			<div class="player">
+				<a class="baidu borderBox" href="#">
+					<img src="./img/player-baidu.png" alt="">
+					<div class="info">
+						<div class="account playerName">百度音乐</div>
+						<div class="account">同步账号:<span class="accountName">HQS小队aaaaaaaa</span>
+						</div>
+					</div>
+				</a>
+				
+			</div>
+			<div class="player">
+				<a class="douban borderBox" href="#">
+					<img src="./img/player-douban.png" alt="">
+					<div class="info">
+						<div class="account playerName">豆瓣音乐</div>
+						<div class="account">未同步:<span class="accountName"></span>
+						</div>
+					</div>
+				</a>
+
+			</div>
+			<div class="player">
+				<a class="baidu borderBox" href="#">
+					<img src="./img/player-local.png" alt="">
+					<div class="info">
+						<div class="account playerName">本地音乐</div>
+						<div class="account">上次同步时间:<span class="updateDate">2014-8-1 12:00</span>
+						</div>
+					</div>
+				</a>
+			</div>
+			<div class="player">
+				<a class="douban borderBox create" href="#">
+					<img src="./img/player-other.png" alt="">
+					<div class="info">
+						<div class="account playerName">更多云音乐</div>
+						
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		
+	</div>
+	<footer id="footer">	
+	    <div class="s-btn default_left">
+	    	<div id="returnBtn" class="icon"></div>
+	    </div>
+		<div class="s-btn sq-btn default_center">
+			<div id="recordBtn" class="icon"></div>
+		</div>
+		<div class="s-btn default_right">
+			<div id="moreBtn" class="icon"></div>
+		</div>	 
+	</footer>
+</body>
+</html>
