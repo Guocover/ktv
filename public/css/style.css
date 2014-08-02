@@ -224,12 +224,13 @@ img{
 .recentSongWrapper{
 	width: 100%;
 	overflow: hidden;
-	height: 140px;
-	min-height: 140px;
-	padding-top:50px;
+	height: 170px;
+	min-height: 170px;
+	/* padding-top:50px; */
 	position: relative;
 	background:url("../img/songs/sw_bg.jpg") no-repeat;
 	background-size: cover;
+	border-bottom: 2px solid #999;
 }
 .centerSong{
 	width: 100px;
@@ -238,6 +239,7 @@ img{
 	left: 50%;
 	margin-left: -50px;
 	z-index: 99;
+	top:40px;
 	border: 2px solid #56F538;
 	border-radius: 12px;
 	background: rgba(122, 115, 115, 0.5);
@@ -267,6 +269,37 @@ img{
 .aside-behind{
 	margin-left: -35px;
 }
+.leftBtn,.rightBtn{
+	position: absolute;
+	width: 60px;
+	height: 60px;
+	z-index: 9;
+	top: 80px;
+	left: 50%;
+}
+
+
+
+.rightBtn{
+	margin-left: 50px;
+
+}
+.leftBtn{
+	margin-left: -105px;
+}
+
+.recentSongWrapper .rsw-title{
+	text-align: center;
+	height: 35px;
+	line-height: 35px;
+	font-size: 20px;
+	color: #fff;
+	margin:10px auto;
+	font-family: "微软雅黑";
+	background: rgba(0,0,0,0.4);
+}
+
+/*transition*/
 
 
 /*songList.html 首页 --end!!*/
@@ -312,5 +345,9 @@ img{
 	left: 4px;
 	top: 4px;
 }
+
+
+
+
 
 /*login.html 登录 --end*/
